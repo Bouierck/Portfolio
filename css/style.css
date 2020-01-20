@@ -1,0 +1,45 @@
+h1{
+  text-shadow: 1px 1px 5px red;
+
+}
+a:hover{
+  transition:0.5s;
+  font-size: 125%;
+
+}
+h1:hover {
+  text-shadow: 2px 2px 7px red;
+  transition: 2s;
+  transform: rotate(1turn);
+}
+
+i{
+  transition: 0.8s;
+}
+i:hover{
+  transition: 1s;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 45%;
+  box-shadow: 15px 15px 45px grey;
+
+}
+h2:hover{
+  text-shadow: 1px 1px 3px red;
+  transition:0.5s;
+  font-size: 225%;
+}
+h2{
+  transition: 0.5s;
+}
+a2:hover{
+  transition: 0.3s;
+  text-shadow: 1px 1px 3px red;
+  transform: rotate(15deg);
+
+
+
+}
+a2{
+  transition: 0.3s;
+}
