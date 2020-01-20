@@ -24,7 +24,7 @@ i:hover{
   box-sizing: border-box;
   padding: 15px;
   border-radius: 45%;
-  box-shadow: 15px 15px 45px grey;
+  box-shadow: 15px grey;
 
 }
 h2:hover{
@@ -82,7 +82,7 @@ a3{
 .container2{
   text-shadow: 1px 1px 3px black;
 }
-.flotte{
+.flotte {
   transition: 1s;
   box-shadow: 20px 20px 15px black;
   opacity: 0;
@@ -101,7 +101,31 @@ a3{
  text-align: center;
  position: absolute;
  width: 100%;
+}
+.videocache{
+  z-index: auto;
+  float: left;
+}
+.centermenualign{
+  transform: translate(-70%, -70%);
+  animation-name: movemenu;
+  animation-duration: 4s;
 
 
 
+}
+
+@keyframes movemenu {
+  0%, 70%{
+
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(-70%, -70%);
+  }
+
+}
+@media screen and (max-width: 1280px) {
+  .centermenualign>.text-uppercase{font-size: 10px;
+  }
 }
