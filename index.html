@@ -1,303 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script>
+    function move() {
+        var elem = document.getElementById("myBar");
+        var width = 20;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 + '%';
+            }
+        }
+    }
+</script>
+
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Nathan Labbé</title>
-
-  <!-- Font Awesome Icons -->
-  <link href="./template/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  <!-- Plugin CSS -->
-  <link href="./template/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS - Includes Bootstrap -->
-  <link href="./template/css/creative.min.css" rel="stylesheet">
-
-  <link href="./css/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Nathan Labbe - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Nathan Labbé</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Domaines</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Projet</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Masthead -->
-  <header class="masthead">
-    <div class="container h-100">
-
-      <div class="video1plan">
-        <video autoplay muted loop>
-          <source src="./img/Castle - 29224.mp4" type="video/mp4">
-        </video>
-
-
-
-        <p style="position:absolute;top:50%; width:85%; height:0px; z-index:2;font-size:50%">
-          <img class="flotte" src="./img/hack.jpg" alt="Nouveau !" style="height:300px;width:300px;border-radius: 50%;position:absolute" />
-        </p>
-        <video autoplay muted loop>
-          <source class="videocache" src="./img/Welcome - 24829.mp4" type="video/mp4" style="position:absolute;height:300px;width:300px;" >
-        </video>
-
-
-        <div class="contentrandom" style="position:absolute;top:360px; width:600px; height:400px; z-index:2;font-size:200%">
-          <div class="centermenualign">
-
-            <h1 class="text-uppercase text-white font-weight-bold">Portfolio</h1>
-            <hr class="divider my-4">
-            <p class="text-white-75 font-weight-light mb-5">Etudiant en Informatique, Programmeur et Hackeur amateur, Fan de collection en tout genre, développeur de logiciel.</p>
-            <a class="btn btn-danger btn-xl js-scroll-trigger" href="#about">Mon parcours</a>
-          </div>
-
-
-        </div>
-      </div>
-
-
-      </div>
-    </div>
-  </header>
-
-  <!-- About Section -->
-
-<section class="page-section" id="about" style="margin:0;padding:0">
-
-      <div class="video1plan" style="position:absolute;z-index:2;font-size:140%;height:63%">
-    <video autoplay muted loop>
-      <source src="./img/Reflection - 27594.mp4" type="video/mp4">
-
-    </video>
-
-    <div class="container2">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-red mt-0"><font color="red"><strong>Etudiant passionée d'informatique</strong></h2>
-          <hr class="divider light my-4">
-          <p class="text-blue-50 mb-4">Lycée Bellevue : obtention du Bac Scientifique Mention Assez Bien(2016-2019)</p>
-          <p class="text-blue-50 mb-4">1er Semestre au sein de l'école d'ingénieur ENSIM(2019-2020)</p>
-          <p class="text-blue-50 mb-4">2nd Semestre en Licence Informatique a l'université du Mans(2019-2020)</font></p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Un peu plus sur moi ?</a>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-
-  <section class="page-section" id="services" style="margin-top:600px;">
-
-    <div class="container">
-
-      <h2 class="text-center mt-0">Mes compétences</h2>
-
-      <hr class="divider my-4">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Collection</h3>
-            <p class="text-muted mb-0">Des cartes à jouer et à collectionner, aux objets fabriqués et vintage!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Programmateur</h3>
-            <p class="text-muted mb-0">Programmeur/Ethical hacker amateur ayant des bases dans de nombreux langages.</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Connecté</h3>
-            <p class="text-muted mb-0">Réseaux sociaux, Internet, Multimedia sur diverses plateformes</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Humain</h3>
-            <p class="text-muted mb-0">Dynamisme et motivation sont mes seconds prénoms!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="./img/nerfd.jpg">
-            <img class="img-fluid" src="./img/nerfd.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Collection
-              </div>
-              <div class="project-name">
-                Nerf, Blasters
-              </div>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="https://utema.tech">Retour à UTEMA</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skillz">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                </ul>
             </div>
-          </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="./img/appgraphique.png">
-            <img class="img-fluid" src="./img/appgraphique.png" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Projet
-              </div>
-              <div class="project-name">
-                Application de rangement économique
-              </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Nathan Labbe</h1>
+                <h2 class="text-white-50 line anim-typewriter">Ethnical Hacker, Pokémon Collector, Developer.</h2>
+                <a class="btn btn-primary js-scroll-trigger" href="#about">A Propos</a>
             </div>
-          </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="./img/cartes.jpg">
-            <img class="img-fluid" src="./img/cartes.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Collection
-              </div>
-              <div class="project-name">
-                TCG (trading card game)
-              </div>
+    </header>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">Portfolio
+                        <hr class="divider mx-auto light my-4" />
+                    </h2>
+                    <p class="text-white-50">
+                        Nathan Labbé, 19 ans, en seconde année de Licence Informatique au Mans.
+                        Je m'interesse aux différents domaines de l'informatique, Web, Réseau, Développement, et en
+                        dehors des cours, je pratique le Hacking Éthique Amateur et fait parti de
+                        <a href="https://utema.tech"> UTEMA</a>
+                        . </br>En dehors de l'informatique, je fais du montage photos et vidéos avec les logiciels Adobe
+                        pour mes
+                        différents réseaux sociaux, et pour les médias de mon compte de Collectionneur Pokémon :
+                        <a href="https://instagram/agentcog"> Agent Cog</a>.</br>
+                        <a class="mx-2" href="https://www.facebook.com/AgentCog"><i class="fab fa-facebook-f"></i></a>
+                        <a class="mx-2"
+                            href="https://www.youtube.com/channel/UCHDN_fyd8Xpk6jT5Xtx_neQ?view_as=subscriber"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="mx-2" href="https://www.instagram.com/agentcog/"><i class="fab fa-instagram"></i></a>
+                        <a class="mx-2" href="https://www.tiktok.com/@agentcog?lang=fr"><i
+                                class="fab fa-tiktok"></i></a></p>
+
+                </div>
+
             </div>
-          </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="./img/league.jpg">
-            <img class="img-fluid" src="./img/league.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Projet
-              </div>
-              <div class="project-name">
-                E-sport
-              </div>
+        <img class="img-fluid" src="assets/img/kali-linux.png" alt="" />
+        </div>
+    </section>
+    <!-- Projects-->
+    <section class="projects-section projects-section bg-light" id="projects">
+        <div class="container">
+
+            <!--      <h2 class="align-items-center col-lg-1 mx-auto no-gutters">Projets</h2></br></br> -->
+
+            <!-- Featured Project Row-->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/hacking.jpg"
+                        alt="" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Hacking Éthique</h4>
+                        <p class="text-black-50 mb-0">
+                            De mon côté, j'apprends le Hacking Éthique, en cherchant à rejoindre un Master en
+                            Cybersécurité.</br> Notamment avec Kali Linux, j'utilise les différents outils, j'apprends
+                            différents type d'attaques wireless d'intrusion Pentest.</br>
+                            J'améliore mes acquis quant au Brute Force, je découvre encore Metasploit, mais m'y
+                            interesse de plus en plus.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="./img/art.jpg">
-            <img class="img-fluid" src="./img/art.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Collection
-              </div>
-              <div class="project-name">
-                Créations Personnelles
-              </div>
+
+            <!-- Project One Row-->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/agentcog.jpg" alt="" /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Projet : Agent Cog
+                                    <img class="col-lg-2 img-fluid" src="assets/img/aclogo.png" alt="" />
+                                </h4>
+                                <p class="mb-0 text-white-50">Un de mes plus gros projets réalisé est celui de Agent
+                                    Cog. Il consiste à la création d'un caractère fictif imaginé par moi-même
+                                    appartenant à l'univers de Pokémon. </br></br>
+                                    Ce personnage a ses propres réseaux sociaux, dont une chaine Youtube sur laquelle je
+                                    fais du Montage vidéo et photo. Cette chaine est orienté autour du contenu de la
+                                    collection de cartes.</br>
+                                    Du coté technique, ce projet m'a permis d'avoir plus d'expériences de montage des
+                                    logiciels Adobe : Photoshop et Premiere Pro. Ainsi que l'expérience des réseaux
+                                    sociaux, référencement, Tags, Contenus (photo amélioré grâce à Lightroom).</br></br>
+                                    Enfin, je souhaitais utilisé mes compétences informatique plus à l'oeuvre pour ce
+                                    projet, je me suis lancé dans la création de fichier google doc avancé, représantant
+                                    la liste de toutes les cartes Pokémon ayant existé. Par ce biais, j'ai utilisé mes
+                                    connaissances en bash, C, et python afin de m'aider dans cette tâche.
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </br>
+                                <div> <a class="mx-2" href="https://www.facebook.com/AgentCog"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="mx-2"
+                                        href="https://www.youtube.com/channel/UCHDN_fyd8Xpk6jT5Xtx_neQ?view_as=subscriber"><i
+                                            class="fab fa-youtube"></i></a>
+                                    <a class="mx-2" href="https://www.instagram.com/agentcog/"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a class="mx-2" href="https://www.tiktok.com/@agentcog?lang=fr"><i
+                                            class="fab fa-tiktok"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="./img/cyber.jpg">
-            <img class="img-fluid" src="./img/cyber.jpg" alt="">
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">
-                Projet
-              </div>
-              <div class="project-name">
-                Découverte de CyberSécurité
-              </div>
+            <!-- Project Two Row-->
+            <div class="row justify-content-center no-gutters">
+                <!--<div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>-->
+                <iframe class="col-lg-6 mx-auto" src="https://www.youtube.com/embed/xfPmBgbaQUs" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                </iframe>
+
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Vidéo</h4>
+                                <p class="mb-0 text-white-50">
+                                    Cela fait maintenant presque 1 an que je monte des vidéos, non pas seulement pour ma
+                                    chaine, mais aussi pour mes autres médias, et d'autres personnes. Ne me basant pas
+                                    seulement sur les montages classiques relayé à mon contenu, je fais aussi quelques
+                                    teasers et court-métrages.
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 mr-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </a>
+            <!-- Project Three Row-->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/gsheet.PNG" alt="" /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Projet en cours</h4>
+                                <p class="mb-0 text-white-50">Un exemple de mon projet Google Sheet de référencement de
+                                    toutes les cartes Pokémon existantes, aidé par des outils de développement élaboré
+                                    par moi-même.</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></br>
+            <!-- Featured Project two Row-->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/programmation2.jpg"
+                        alt="" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4 class="text-white-50">Programmation</h4>
+                        <p class="text-black mb-0">Actuellement en seconde année d'informatique, nous apprenons
+                            diverses langages de programmation visibles dans
+                            <a class=" js-scroll-trigger" href="#skillz">Skills</a>
+                            . </br>
+                            A l'université ou en apprentissage solitaire, j'apprends à manipuler différents OS tel que
+                            Ubuntu,
+                            Debian, Kali Linux, Arch.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Three Row-->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/fbprofile.jpg" alt="" /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">UTEMA</h4>
+                                <p class="mb-0 text-white-50">D'un naturel photogénique, je fais aussi modèle photo pour
+                                    la partie Photographie de
+                                    <a href="https://utema.tech"> UTEMA</a>
+                                    . Je participe aux développements des différents projets que nous concevont en
+                                    utilisant et
+                                    améliorant à chaque fois mes compétences techniques.
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+    <!-- Skills-->
+    <!--
+    <section class="skillz-section projects-section bg-light" id="skillz">
+        <h1 class="text-white row justify-content-center no-gutters mb-5 mb-lg-0">My Skills</h1>
+        <div class="skills">
+            <div class="skill">
+                <div class="text-white skill-name">C/C++</div>
+                <div class="skill-bar">
+                    <div class="skill-per1 skill-per" per="90"></div>
+                </div>
+            </div>
 
-  <!-- Call to Action Section -->
-  <section class="page-section bg-dark text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">Medias</h2>
-
-      <a2 class="btn btn-light btn-xl" onclick="window.location.href = 'https://www.facebook.com/nathan.labbe.92';">Facebook</a2>
-
-      <a2 class="btn btn-light btn-xl" onclick="window.location.href = 'https://www.reddit.com/user/Bouierck';">Reddit</a2>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Une question ? Contactez moi!</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5">Je reste disponible pour toute question concernant mon site, mon parcours, ou bien l'avenir de mes projets!</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>06******58</div>
+        <div class="skills">
+            <div class="skill">
+                <div class="text-white skill-name">PHP</div>
+                <div class="skill-bar">
+                    <div class="skill-per2 skill-per" per="60"></div>
+                </div>
+            </div>
+
         </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:nathan.labbe.2001@gmail.com">nathan.labbe.2001@gmail.com</a>
+        <div class="skills">
+            <div class="skill">
+                <div class="text-white skill-name">HTML/CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-per3 skill-per" per="70"></div>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-light py-5">
-    <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
-    </div>
-  </footer>
+    </section>
+    -->
+    <section class="skillz-section projects-section bg-light" id="skillz">
+        <h2 class="text-white text-center mx-auto mb-5 skill-title">My Skills
+            <hr class="divider mx-auto light my-4" />
+        </h2>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="./template/vendor/jquery/jquery.min.js"></script>
-  <script src="./template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <div class="container-skillz text-black mx-auto">
 
-  <!-- Plugin JavaScript -->
-  <script src="./template/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="./template/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+            <!--HTML/CSS-->
+            <div class="card">
+                <div class="box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>65<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text-skills">Html/CSS</h2>
+                </div>
+            </div>
+            <!--Python-->
+            <div class="card">
+                <div class="box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>80<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text-skills">Python</h2>
+                </div>
+            </div>
+            <!--C/C++-->
+            <div class="card">
+                <div class="box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>85<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text-skills">C/C++</h2>
+                </div>
+            </div>
 
-  <!-- Custom scripts for this template -->
-  <script src="./template/js/creative.min.js"></script>
+            <!--PHP-->
+            <div class="card">
+                <div class="box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>50<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text-skills">PHP</h2>
+                </div>
+            </div>
+        </div>
+        </br>
+        <div class="container-skillz-2 text-black mx-auto">
+            <!--Javascript-->
+            <div class="card-2">
+                <div class="box-2">
+                    <div class="percent-2">
+                        <svg class="svg2">
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number-2">
+                            <h2>60<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text-skills-2">Javascript</h2>
+                </div>
+            </div>
+            <!--Photoshop-->
+            <div class="card-2">
+                <div class="box-2">
+                    <div class="percent-2">
+                        <svg class="svg2">
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number-2">
+                            <h2>70<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text-skills-2">Photoshop</h2>
+                </div>
+            </div>
 
+            <!--Premiere Pro-->
+            <div class="card-2">
+                <div class="box-2">
+                    <div class="percent-2">
+                        <svg class="svg2">
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number-2">
+                            <h2>90<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text-skills-2">Premiere Pro</h2>
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="box-2">
+                    <div class="percent-2">
+                        <svg class="svg2">
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number-2">
+                            <h2>65<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text-skills-2">SQL</h2>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Signup-->
+    <section class="signup-section" id="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Recevoir les nouveautés :</h2>
+                    <form class="form-inline d-flex">
+                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
+                            placeholder="Enter email address..." />
+                        <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="card-top col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Addresse</h4>
+                            <hr class="my-4" />
+                            <div class="small text-white-50">72000, Le Mans</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-top col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"><a href="#!">nathan.labbe.2001@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-top col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Téléphone</h4>
+                            <hr class="my-4" />
+                            <div class="small text-white-50">06 ** ** ** 58</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex justify-content-center">
+                <a class="mx-2" href="#!"><i class="fab fa-linkedin"></i></a>
+                <a class="mx-2" href="https://instagram.com/nathlabbe72/"><i class="fab fa-instagram"></i></a>
+                <a class="mx-2" href="https://www.facebook.com/nathan.labbe.92/"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container">Copyright © Nathan LABBE - UTEMA 2020</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
