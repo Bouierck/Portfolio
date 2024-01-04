@@ -525,6 +525,30 @@ a {
 * 6. Home
 /* ---------------------------------------------- */
 
+.img-slide {
+    max-width: 5vw;
+    height: auto;
+    animation: scroll 30s linear infinite;
+}
+
+.slide-track {
+
+    display: flex;
+    gap: 3.1em;
+    overflow: hidden;
+}
+
+.slider {
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 3em 0.2em;
+}
+
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-5160%);}
+}
+
 .section-home {
     height: 100vh;
     position: relative;
@@ -1110,6 +1134,17 @@ a {
 
 .services-list-6 {
     background-image: url("../images/services6.jpg");
+}
+.services-list-7 {
+    background-image: url("../images/luke-chesser.jpg");
+}
+
+.services-list-8 {
+    background-image: url("../images/growtika.jpg");
+}
+
+.services-list-9 {
+    background-image: url("../images/fabio.jpg");
 }
 
 
